@@ -38,7 +38,7 @@ To use a different photo, replace that file with a new one of the same name (bes
 
 ## Hero photo
 
-The hero uses the photo **"Natural Field view"** by Muaz 999 (a field in Bangladesh), licensed **CC BY-SA 4.0**, loaded directly from Wikimedia Commons. The credit is shown in the footer — please keep it if you keep the photo.
+The hero uses a rice-field photo taken in Comilla, Bangladesh by **Injamul Raive**, free to use under the **Unsplash License**, loaded directly from Unsplash. A credit is shown in the footer (not legally required, but kind — please keep it).
 
 Prefer to host the image yourself or use your own photograph?
 
