@@ -8,8 +8,8 @@ A light, natural, bilingual (English + বাংলা) personal website for Rif
 |---|---|
 | `index.html` | The whole website (HTML, CSS and JavaScript in one file) |
 | `assets/hero-fallback.svg` | Illustrated rice-field landscape shown behind the hero photo (and if the photo can't load) |
-| `assets/rifat-portrait.jpg` | Your portrait for the About section |
-| `assets/portrait-placeholder.svg` | Automatic fallback if the portrait file is missing |
+| `assets/rifat-portrait.jpg` | Copy of your portrait (already embedded in `index.html`; use it when changing the photo) |
+| `assets/portrait-placeholder.svg` | Spare placeholder image (not used by the page) |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is |
 | `README.md` | This guide |
 
@@ -32,9 +32,13 @@ Double-click `index.html` to open it in any modern browser. An internet connecti
 
 ## Change the portrait photo
 
-Your portrait is already in place: `assets/rifat-portrait.jpg` (cropped to 4:5, about 800 × 1000 px).
+Your portrait is already embedded directly inside `index.html`, so it shows even if the `assets` folder is not uploaded. A copy is also saved as `assets/rifat-portrait.jpg` (4:5 crop, about 800 × 1000 px).
 
-To use a different photo, replace that file with a new one of the same name (best: 4:5 portrait, about 800 × 1000 px, under ~300 KB) and commit it to GitHub. No code change is needed. If the file is ever missing, the site automatically shows `assets/portrait-placeholder.svg` instead.
+To use a different photo:
+
+1. Save the new photo (best: 4:5 portrait, about 800 × 1000 px, under ~300 KB) as `assets/rifat-portrait.jpg`.
+2. In `index.html`, find the `<img>` inside `<div class="portrait-frame">` and replace its long `src="data:image/jpeg;base64,..."` value with `src="assets/rifat-portrait.jpg"`.
+3. Upload both the new photo and `index.html` to GitHub.
 
 ## Hero photo
 
