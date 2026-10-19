@@ -14,16 +14,17 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4a30'/%3E%3Cpath d='M32 50V30' stroke='%23f8f4ea' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M32 30c0-9 7-14 17-14 0 9-7 14-17 14z' fill='%23f8f4ea'/%3E%3Cpath d='M32 36c0-7-6-11-14-11 0 7 6 11 14 11z' fill='%23b9d79a'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Anek+Bangla:wght@400;500;600&family=Tiro+Bangla&display=swap" rel="stylesheet">
   <style>
     :root{
       --forest:#1f4a30;--forest-deep:#12281a;--link:#2a6a3f;--leaf:#6f9f55;
       --cream:#f8f4ea;--sand:#efe6d2;--card:#fffdf8;--ink:#1c2a20;--muted:#4b5a4f;
       --line:#ddd2b9;--gold:#f3c969;--clay:#a85a35;
       --max:1140px;--radius:20px;--shadow:0 18px 40px -26px rgba(18,40,26,.45);
-      --serif:"Fraunces","Hind Siliguri",Georgia,serif;
-      --sans:"DM Sans","Hind Siliguri",system-ui,-apple-system,"Segoe UI",sans-serif;
-      --bn:"Hind Siliguri","Noto Sans Bengali","Kalpurush",sans-serif;
+      --serif:"Fraunces","Tiro Bangla",Georgia,serif;
+      --sans:"DM Sans","Anek Bangla",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --bn:"Anek Bangla","Noto Sans Bengali","Hind Siliguri","Kalpurush",sans-serif;
+      --bn-display:"Tiro Bangla","Noto Serif Bengali","Anek Bangla",serif;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
@@ -34,7 +35,8 @@
     :focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:6px}
     .hero :focus-visible,.vision :focus-visible,footer :focus-visible{outline-color:var(--gold)}
     .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
-    .bn{font-family:var(--bn);line-height:1.85}
+    .bn{font-family:var(--bn);line-height:1.8}
+    .hero-bn,.h2-bn,.quote p.bn,.journey .bn.sub{font-family:var(--bn-display);font-weight:400}
     .skip{position:absolute;left:12px;top:-60px;background:var(--forest);color:var(--cream);padding:10px 16px;border-radius:10px;z-index:100;font-weight:700;transition:top .2s}
     .skip:focus{top:12px}
     .i{width:1.35em;height:1.35em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -58,8 +60,8 @@
     .hero{position:relative;isolation:isolate;min-height:min(88vh,780px);display:flex;align-items:center;color:#fbf7ec;overflow:hidden;background:#2f5d3f}
     .hero-media{position:absolute;inset:0;z-index:-2}
     .hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .hero-photo{object-position:center 62%}
-    .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,34,20,.84) 0%,rgba(12,34,20,.62) 46%,rgba(12,34,20,.16) 100%),linear-gradient(180deg,rgba(12,34,20,.15) 55%,rgba(12,34,20,.5) 100%)}
+    .hero-photo{object-position:center 62%;filter:brightness(1.18) saturate(1.12) contrast(1.04)}
+    .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,40,24,.68) 0%,rgba(14,40,24,.44) 45%,rgba(14,40,24,.04) 100%),linear-gradient(180deg,rgba(14,40,24,0) 60%,rgba(14,40,24,.28) 100%)}
     .hero-inner{padding:96px 0 150px;max-width:700px}
     .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
     .eyebrow:before{content:"";width:34px;height:2px;background:var(--gold)}
@@ -101,8 +103,8 @@
     .portrait{margin:0;position:relative}
     .portrait-frame{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:var(--sand);box-shadow:var(--shadow)}
     .portrait-frame img{width:100%;height:100%;object-fit:cover}
-    .portrait:before{content:"";position:absolute;inset:18px -16px -16px 18px;border:2px solid var(--leaf);border-radius:28px;z-index:-1;opacity:.55}
-    .portrait figcaption{margin-top:20px;font-size:14px;color:var(--muted)}
+    .portrait:before{content:"";position:absolute;inset:16px -16px auto 16px;aspect-ratio:4/5;border:2px solid var(--leaf);border-radius:28px;z-index:-1;opacity:.55}
+    .portrait figcaption{margin-top:36px;font-size:14px;color:var(--muted)}
     .portrait figcaption strong{display:block;font:600 19px var(--serif);color:var(--forest-deep)}
     .about-copy p{color:#34443a}
     .about-copy .bn{color:var(--muted);font-size:15.5px;margin-bottom:20px}
@@ -223,7 +225,7 @@
       .wrap{width:min(var(--max),calc(100% - 36px))}
       nav{min-height:66px}.navlinks{top:66px}
       .hero{min-height:640px;align-items:flex-end}
-      .hero:after{background:linear-gradient(180deg,rgba(12,34,20,.55) 0%,rgba(12,34,20,.78) 55%,rgba(12,34,20,.9) 100%)}
+      .hero:after{background:linear-gradient(180deg,rgba(14,40,24,.36) 0%,rgba(14,40,24,.58) 50%,rgba(14,40,24,.74) 100%)}
       .hero-inner{padding:70px 0 120px}
       .actions{flex-direction:column;align-items:stretch}.btn{align-items:center;text-align:center}
       .cards,.cards.six{grid-template-columns:1fr}
@@ -315,8 +317,8 @@
       <div class="about-grid">
         <figure class="portrait reveal">
           <div class="portrait-frame">
-            <!-- To use your own photo: save it as assets/rifat-portrait.jpg and change the src below to "assets/rifat-portrait.jpg" -->
-            <img src="assets/portrait-placeholder.svg" alt="Portrait placeholder for Rifat Sheik — personal photo coming soon" width="640" height="800" loading="lazy" decoding="async">
+            <!-- To change the photo: replace assets/rifat-portrait.jpg (4:5 portrait, about 800 x 1000 px). If the file is missing, the placeholder shows instead. -->
+            <img src="assets/rifat-portrait.jpg" alt="Portrait of Rifat Sheik" width="800" height="1000" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/portrait-placeholder.svg'">
           </div>
           <figcaption><strong>Rifat Sheik</strong>Aspiring agritech entrepreneur · Bangladesh<br><span class="bn" lang="bn">উদীয়মান অ্যাগ্রিটেক উদ্যোক্তা · বাংলাদেশ</span></figcaption>
         </figure>
