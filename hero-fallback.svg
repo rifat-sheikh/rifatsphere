@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fb9a6"/>
+      <stop offset=".5" stop-color="#efe0b4"/>
+      <stop offset="1" stop-color="#f6d79c"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1dfae"/>
+      <stop offset="1" stop-color="#b9cfb4"/>
+    </linearGradient>
+    <linearGradient id="fieldA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8db95f"/>
+      <stop offset="1" stop-color="#5e9647"/>
+    </linearGradient>
+    <linearGradient id="fieldB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e9647"/>
+      <stop offset="1" stop-color="#2f6e3a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6d6" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="fieldClip"><path d="M0 640 L1600 640 L1600 900 L0 900 Z"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1180" cy="430" r="260" fill="url(#glow)"/>
+  <circle cx="1180" cy="430" r="62" fill="#fff3c8"/>
+
+  <g fill="#ffffff" opacity=".5">
+    <ellipse cx="320" cy="170" rx="190" ry="26"/>
+    <ellipse cx="450" cy="150" rx="120" ry="22"/>
+    <ellipse cx="1050" cy="120" rx="210" ry="24"/>
+    <ellipse cx="1210" cy="140" rx="110" ry="18"/>
+  </g>
+
+  <!-- distant tree line -->
+  <path d="M0 568 C120 548 240 556 360 562 C480 568 560 548 700 552 C840 556 940 570 1080 560 C1220 550 1340 552 1460 562 C1520 566 1570 562 1600 558 L1600 640 L0 640 Z" fill="#5a8763" opacity=".9"/>
+  <path d="M0 598 C140 584 260 596 400 592 C540 588 640 600 800 594 C960 588 1080 598 1240 592 C1380 586 1500 594 1600 590 L1600 650 L0 650 Z" fill="#3f6e4b"/>
+
+  <!-- river -->
+  <path d="M0 640 C300 600 520 650 800 626 C1080 602 1320 640 1600 612 L1600 690 C1320 716 1080 676 800 702 C520 724 300 684 0 716 Z" fill="url(#river)"/>
+  <path d="M120 662 C300 650 420 672 600 660" stroke="#ffffff" stroke-opacity=".5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M900 668 C1080 654 1240 672 1420 658" stroke="#ffffff" stroke-opacity=".5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- small boat -->
+  <path d="M1010 664 Q1050 686 1110 664 Z" fill="#6d4a2c"/>
+  <path d="M1060 664 L1060 628 L1092 664 Z" fill="#f3ead2"/>
+
+  <!-- rice fields with perspective rows -->
+  <path d="M0 700 C400 672 800 708 1200 684 C1400 672 1500 680 1600 690 L1600 900 L0 900 Z" fill="url(#fieldA)"/>
+  <path d="M0 760 C360 728 760 768 1160 742 C1380 728 1500 738 1600 748 L1600 900 L0 900 Z" fill="url(#fieldB)"/>
+  <g clip-path="url(#fieldClip)" stroke="#e6f2c4" stroke-opacity=".28" stroke-width="3">
+    <line x1="800" y1="690" x2="-800" y2="900"/>
+    <line x1="800" y1="690" x2="-500" y2="900"/>
+    <line x1="800" y1="690" x2="-200" y2="900"/>
+    <line x1="800" y1="690" x2="100" y2="900"/>
+    <line x1="800" y1="690" x2="400" y2="900"/>
+    <line x1="800" y1="690" x2="700" y2="900"/>
+    <line x1="800" y1="690" x2="1000" y2="900"/>
+    <line x1="800" y1="690" x2="1300" y2="900"/>
+    <line x1="800" y1="690" x2="1600" y2="900"/>
+    <line x1="800" y1="690" x2="1900" y2="900"/>
+    <line x1="800" y1="690" x2="2200" y2="900"/>
+    <line x1="800" y1="690" x2="2500" y2="900"/>
+  </g>
+
+  <!-- palms (left) -->
+  <g fill="none" stroke="#244a31" stroke-linecap="round">
+    <path d="M150 640 C160 520 175 430 200 330" stroke-width="12"/>
+    <path d="M250 650 C250 560 262 500 290 420" stroke-width="10"/>
+  </g>
+  <g fill="#2d5b3a">
+    <path d="M200 330 C150 300 100 310 60 345 C115 330 160 335 200 330Z"/>
+    <path d="M200 330 C240 290 300 290 340 320 C290 315 240 320 200 330Z"/>
+    <path d="M200 330 C175 280 140 260 105 262 C150 285 175 305 200 330Z"/>
+    <path d="M200 330 C230 275 270 255 310 262 C265 285 235 305 200 330Z"/>
+    <path d="M290 420 C250 395 210 402 178 430 C225 418 258 420 290 420Z"/>
+    <path d="M290 420 C320 385 365 385 395 410 C355 405 320 410 290 420Z"/>
+    <path d="M290 420 C275 380 250 362 225 362 C258 382 275 400 290 420Z"/>
+  </g>
+  <!-- palms (right) -->
+  <g fill="none" stroke="#244a31" stroke-linecap="round">
+    <path d="M1470 650 C1462 540 1450 450 1430 360" stroke-width="12"/>
+  </g>
+  <g fill="#2d5b3a">
+    <path d="M1430 360 C1385 330 1335 338 1298 372 C1350 358 1392 360 1430 360Z"/>
+    <path d="M1430 360 C1470 322 1530 324 1568 356 C1520 346 1470 350 1430 360Z"/>
+    <path d="M1430 360 C1408 308 1375 288 1340 290 C1385 312 1408 335 1430 360Z"/>
+    <path d="M1430 360 C1456 305 1498 285 1534 292 C1490 312 1458 334 1430 360Z"/>
+  </g>
+</svg>

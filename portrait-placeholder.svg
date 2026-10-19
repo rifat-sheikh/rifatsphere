@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6efdc"/>
+      <stop offset="1" stop-color="#e6dbc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <!-- soft hills -->
+  <path d="M0 620 C140 560 260 600 380 570 C490 542 570 570 640 548 L640 800 L0 800 Z" fill="#b9d1a0" opacity=".75"/>
+  <path d="M0 690 C160 640 300 690 440 656 C530 636 590 650 640 640 L640 800 L0 800 Z" fill="#7fa86a" opacity=".85"/>
+  <!-- sun -->
+  <circle cx="500" cy="170" r="46" fill="#f3d58a" opacity=".85"/>
+  <!-- silhouette -->
+  <circle cx="320" cy="300" r="92" fill="#2c6a3e" opacity=".92"/>
+  <path d="M130 700 C130 560 210 478 320 478 C430 478 510 560 510 700 Z" fill="#2c6a3e" opacity=".92"/>
+  <!-- caption -->
+  <rect x="190" y="716" width="260" height="44" rx="22" fill="#f8f4ea" opacity=".92"/>
+  <text x="320" y="744" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#1f4a30" letter-spacing="1.5">PHOTO COMING SOON</text>
+</svg>

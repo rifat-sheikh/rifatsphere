@@ -8,7 +8,8 @@ A light, natural, bilingual (English + বাংলা) personal website for Rif
 |---|---|
 | `index.html` | The whole website (HTML, CSS and JavaScript in one file) |
 | `assets/hero-fallback.svg` | Illustrated rice-field landscape shown behind the hero photo (and if the photo can't load) |
-| `assets/portrait-placeholder.svg` | Portrait placeholder for the About section |
+| `assets/rifat-portrait.jpg` | Your portrait for the About section |
+| `assets/portrait-placeholder.svg` | Automatic fallback if the portrait file is missing |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is |
 | `README.md` | This guide |
 
@@ -29,16 +30,11 @@ Double-click `index.html` to open it in any modern browser. An internet connecti
 >
 > Tip: if the `.nojekyll` file seems hidden on your computer, that is normal — files starting with a dot are hidden by default. Make sure it is included in the upload.
 
-## Replace the portrait placeholder
+## Change the portrait photo
 
-1. Pick a portrait photo (best: portrait orientation, 4:5 ratio, about 800 × 1000 px, under ~300 KB).
-2. Save it as `assets/rifat-portrait.jpg`.
-3. In `index.html`, find the comment `To use your own photo` in the About section and change
+Your portrait is already in place: `assets/rifat-portrait.jpg` (cropped to 4:5, about 800 × 1000 px).
 
-   `src="assets/portrait-placeholder.svg"`  →  `src="assets/rifat-portrait.jpg"`
-
-   Also update the `alt` text on that line to something like `Portrait of Rifat Sheik`.
-4. Commit the new photo and the updated `index.html` to GitHub.
+To use a different photo, replace that file with a new one of the same name (best: 4:5 portrait, about 800 × 1000 px, under ~300 KB) and commit it to GitHub. No code change is needed. If the file is ever missing, the site automatically shows `assets/portrait-placeholder.svg` instead.
 
 ## Hero photo
 
